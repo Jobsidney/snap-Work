@@ -34,3 +34,26 @@
     border: none;
     cursor: pointer;
 }
+
+#remote>.decr>:first-child{
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+#remote>.decr>div{
+    font-size: 1.5rem;
+    opacity: 0.6;
+    margin: 1rem 0 3rem 0;
+}
+.decr{
+    min-width: 600px;
+}
+.image>img{
+    width: 500px;
+
+}
+#remote{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    justify-content: center;
+}
