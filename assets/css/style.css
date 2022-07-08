@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     background-color: hsl(0, 0%, 98%);
+    font-family: Epilogue;
 }
 .navSec{
+    align-items: center;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* font-size: 18px; */
-    margin: 2% 1%;
+    margin: 3% 2%;
 }
 .navSec>#logo{
     display: inherit;
@@ -25,14 +27,16 @@
 }
 .register{
     border: 1px solid;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.8rem;
     border-radius: 15px;
     cursor: pointer;
+    font-size: 18px;
 }
 .login{
     padding: 0.5rem 1.5rem;
     border: none;
     cursor: pointer;
+    font-size: 18px;
 }
 
 #remote>.decr>:first-child{
@@ -40,20 +44,35 @@
     font-weight: bolder;
 }
 #remote>.decr>div{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0.6;
     margin: 1rem 0 3rem 0;
 }
+#remote>.decr>button{
+    padding: 0.9rem 2rem;
+    font-weight: bold;
+    font-size: large;
+    max-width: 200px;
+}
+#remote>.decr>button:hover,.register:hover{
+    background-color: black;
+    color: white;
+}
 .decr{
+    display: flex;
+    flex-direction: column;
     min-width: 600px;
+    padding-top: 12rem;
+    justify-content: space-between;
 }
 .image>img{
     width: 500px;
-
 }
 #remote{
     display: flex;
     flex-direction: row;
-    margin: 0 10%;
     justify-content: center;
+}
+.cards>img{
+    padding: 1rem;
 }
