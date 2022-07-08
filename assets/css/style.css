@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: hsl(0, 0%, 98%);
+    
     font-family: Epilogue;
 }
 .navSec{
@@ -57,6 +57,8 @@
 #remote>.decr>button:hover,.register:hover{
     background-color: black;
     color: white;
+    transform: scale(1);
+    transition: 2s;
 }
 .decr{
     display: flex;
@@ -73,6 +75,25 @@
     flex-direction: row;
     justify-content: center;
 }
+body{
+    background-color: hsl(0, 7%, 92%);
+}
 .cards>img{
     padding: 1rem;
+}
+.floating{
+    width: 150px;
+    height: 140px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+    
 }
