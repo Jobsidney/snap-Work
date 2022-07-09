@@ -167,9 +167,10 @@ body{
 
 
 #remote>.decr>:first-child{
-    font-size: 4em;
+    font-size: 300%;
     font-weight: bolder;
     flex-direction: row;
+    justify-content: space-evenly;
 
 }
 #remote>.decr,.image>img,#remote>.decr>button{
@@ -180,12 +181,10 @@ body{
     padding: 0.9rem 2rem;
     font-weight: bold;
     font-size: large;
-    justify-content: stretch;
 }
 #remote>.decr>button:hover,.register:hover{
     background-color: black;
     color: white;
-    /* transform: scale(1); */
     transition: 2s;
 }
 .decr{
