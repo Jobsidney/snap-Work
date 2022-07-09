@@ -5,6 +5,7 @@
     font-family: Epilogue;
 }
 .navSec{
+    
     align-items: center;
     font-size: 18px;
     display: flex;
@@ -16,7 +17,12 @@
     display: inherit;
     justify-content: space-between;
 }
+.navSec>#logo>:first-child{
+    display: none;
+    z-index: 1;
+}
 .navSec>#logo>ul{
+    /* visibility: hidden; */
     display: inherit;
     list-style: none;
 }
@@ -26,6 +32,15 @@
     cursor: pointer;
 }
 .credential{display: inherit;
+}
+.credential>:first-child{
+    display: inherit;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    display: inherit;
+    position:absolute;
+    z-index: 1;
+    display: none;
 }
 .register{
     border: 1px solid;
@@ -44,6 +59,9 @@
 #remote>.decr>:first-child{
     font-size: 4.5rem;
     font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #remote>.decr>div{
     font-size: 1.3rem;
@@ -104,6 +122,100 @@ body{
 }
 
 /* MEDIA QUERY */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 900px) {
+    .navSec{
     
+        align-items: center;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3% 2%;
+    }
+    .navSec>#logo>ul,.navSec>#logo>ul>li>img{
+        display: inherit;
+        position:absolute;
+        z-index: 1;
+        display: none;
+    }
+    .credential>:first-child{
+        display: inherit;
+        position:relative;
+        display: flex;
+    }
+    .navSec>#logo>ul>li{
+        margin: 0px 15px;
+    }
+    .credential{display: inherit;
+    }
+    .register{
+        border: 1px solid;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .login{
+        padding: 0.5rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .credential>.register,.credential>.login{
+        display: none;
+    }
+
+
+#remote>.decr>:first-child{
+    font-size: 4em;
+    font-weight: bolder;
+    flex-direction: row;
+
+}
+#remote>.decr,.image>img,#remote>.decr>button{
+    text-align: center;
+    align-items: center;
+}
+#remote>.decr>button{
+    padding: 0.9rem 2rem;
+    font-weight: bold;
+    font-size: large;
+    justify-content: stretch;
+}
+#remote>.decr>button:hover,.register:hover{
+    background-color: black;
+    color: white;
+    /* transform: scale(1); */
+    transition: 2s;
+}
+.decr{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+.image>img{
+    min-width: 100px;
+    max-width: 400px;
+    width: 50%;
+}
+.image{
+    margin:auto;
+}
+#remote{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+
+}
+body{
+    background-color: hsl(0, 7%, 92%);
+}
+.cards>img{
+    padding: 0.2rem;
+}
+
 }
